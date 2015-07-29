@@ -1,0 +1,15 @@
+{
+  "name": "FlatMate",
+  "version": "0.0.1",
+  "description": "Concrete 5 theme",
+  "private": true,
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-newer": "latest"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "FlatMate",
+  "version": "0.0.1",
+  "description": "Concrete 5 theme",
+  "authors": [
+    "Mark Dazey <mark@dazeysolutions.com>"
+  ],
+  "private": true,
+  "license": "MIT",
+  "homepage": "dazeysolutions.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "fontawesome": "latest",
+    "angular": "~1.4.0",
+    "bootstrap-treeview": "~1.2.0"
+  }
+}
