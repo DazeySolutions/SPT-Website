@@ -1,15 +1,18 @@
 {
-  "name": "FlatMate",
+  "name": "spt",
   "version": "0.0.1",
   "description": "Concrete 5 theme",
+  "authors": [
+    "Mark Dazey <mark@dazeysolutions.com>"
+  ],
   "private": true,
   "devDependencies": {
-    "grunt": "latest",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-newer": "latest"
+    "gulp": "latest",
+    "gulp-less": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-jshint": "latest",
+    "jshint-stylish": "latest",
+    "del": "latest",
+    "less-plugin-clean-css": "latest"
   }
 }

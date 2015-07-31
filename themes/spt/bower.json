@@ -1,5 +1,5 @@
 {
-  "name": "FlatMate",
+  "name": "spt",
   "version": "0.0.1",
   "description": "Concrete 5 theme",
   "authors": [
@@ -7,7 +7,6 @@
   ],
   "private": true,
   "license": "MIT",
-  "homepage": "dazeysolutions.com",
   "ignore": [
     "**/.*",
     "node_modules",
