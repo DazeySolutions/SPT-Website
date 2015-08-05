@@ -19,6 +19,7 @@
     "jquery": "latest",
     "fontawesome": "latest",
     "angular": "~1.4.0",
-    "bootstrap-treeview": "~1.2.0"
+    "bootstrap-treeview": "~1.2.0",
+    "responsive-lightbox": "*"
   }
 }

@@ -26,7 +26,11 @@ gulp.task('less', function(){
 gulp.task('copy', ['copy:fonts', 'copy:libraries']);
 
 gulp.task('copy:fonts', function(){
-	return gulp.src(['bower_components/fontawesome/fonts/*', 'bower_components/bootstrap/fonts/*'])
+	return gulp.src([
+						'bower_components/fontawesome/fonts/*', 
+						'bower_components/bootstrap/fonts/*',
+						'src/fonts/*'
+					])
 		.pipe(gulp.dest('assets/fonts'));
 });
 gulp.task('copy:libraries', function(){
@@ -35,7 +39,9 @@ gulp.task('copy:libraries', function(){
 						'bower_components/bootstrap/dist/js/*', 
 						'bower_components/angular/angular.js', 
 						'bower_components/angular/angular.min.js', 
+						'bower_components/responsive-lightbox/jquery.lightbox.min.js',
 						'bower_components/angular/angular.min.js.map',
+						'src/js/libs/*.js'
 					])
 		.pipe(gulp.dest('assets/js'));
 });

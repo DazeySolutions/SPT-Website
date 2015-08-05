@@ -1,2 +1,2 @@
-FlatMate
-Bootstrap 3 template in a Flat Material Design
+Conquered
+Modified version of conquer theme http://www.templatemo.com/free-website-templates/426-conquer
