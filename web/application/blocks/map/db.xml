@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btMap">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="title" type="C" size="255"></field>		
+		<field name="location" type="C" size="255"></field>	
+		<field name="latitude" type="F"></field>
+		<field name="longitude" type="F"></field>	
+		<field name="zoom" type="I" size="3"></field>
+        <field name="width" type="C" size="8">
+            <default value="100%"/>
+        </field>	
+        <field name="height" type="C" size="8">
+            <default value="400px"/>
+        </field>
+        <field name="scrollwheel" type="I1">
+            <unsigned />
+            <notnull />
+            <default value="1" />
+        </field>
+        <field name="draggable" type="I1">
+            <unsigned />
+            <notnull />
+            <default value="1" />
+        </field>
+        <field name="defaultui" type="I1">
+            <unsigned />
+            <notnull />
+            <default value="0" />
+        </field>
+        <field name="customstyle" type="I1">
+            <unsigned />
+            <notnull />
+            <default value="0" />
+        </field>
+		<field name="fMarkerID" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="styles" type="XL"></field>
+	</table>
+</schema>

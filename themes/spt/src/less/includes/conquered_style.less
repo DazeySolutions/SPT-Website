@@ -1,4 +1,19 @@
-body{font:14px/1.85em 'Open Sans',Arial,Helvetice Neue,sans-serif; color:#888888; font-weight:300; font-style:normal; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;}
+.ccm-page{
+	.conquered_topbar {
+    	// top: 49px;
+	}
+}
+p{
+	margin: 0px;
+}
+body{
+	font:'Open Sans',Arial,Helvetice Neue,sans-serif; 
+	color:#888888; 
+	font-weight:300; 
+	font-style:normal; 
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:100%;
+}
 a,a:hover,a:focus{text-decoration:none; -webkit-transition:all 150ms ease-in; -moz-transition:all 150ms ease-in; -o-transition:all 150ms ease-in; transition:all 150ms ease-in;}
 h1,h2,h3,h4,h5,h6{font-family:'Open Sans',Arial,Helvetice Neue,sans-serif;}
 h1{width:100%; font-size:36px; color:#747474; text-align:center;}
@@ -7,6 +22,9 @@ h1{width:100%; font-size:36px; color:#747474; text-align:center;}
 .clear{clear:both;}
 .conquered_marginbot{margin-bottom:50px;}
 .conquered_topbar{
+	.row{
+		margin-bottom: -15px;
+	}
 	width:100%; 
 	background:@brand-info; 
 	z-index:10; 
@@ -26,7 +44,23 @@ h1{width:100%; font-size:36px; color:#747474; text-align:center;}
 		display:	block;
 	}
 }
-.conquered_title{position:absolute; height:150px; line-height:84px; float:left; display:block; width:100%; text-align:center; font-size:50px; color:#ffffff; top:0; left:0;}
+.conquered_title{
+	position:absolute; 
+	height:150px; 
+	line-height:84px; 
+	float:left; 
+	display:block; 
+	width:100%; 
+	text-align:center; 
+	font-size:50px; 
+	color:#ffffff; 
+	top:0; 
+	left:0;
+	.logo{
+		margin: auto;
+		max-height: 138px;
+	}
+}
 .conquered_title span{display:block; height:150px;}
 
 .conquered_menu{position:relative; top:10%;}
@@ -39,9 +73,9 @@ h1{width:100%; font-size:36px; color:#747474; text-align:center;}
 #top-menu{
 	li.active {
 		a{
-			background:#fd704e; 
+			background:	@brand-warning; 
 			opacity:0.8; 
-			color:#FF6;
+			color:	@gray-lighter;
 		}
 	}
 	a:hover{
@@ -86,9 +120,20 @@ h1{width:100%; font-size:36px; color:#747474; text-align:center;}
 .conquered_contactwrapper textarea{height:120px;}
 .conquered_sendbtn{background:#e46142; color:#fff; padding:7px 25px; float:left;}
 
-.conquered_footerwrapper{background:#e46142; color:#fff; width:100%; padding:20px 0; margin-top:50px;}
-.conquered_footerwrapper a{color:#fff;}
-.conquered_footerwrapper a:hover{color:#FC3;}
+.conquered_footerwrapper{
+	background:	@brand-info; 
+	color:		white; 
+	padding:	5px 0; 
+	a{
+		padding: 0px 5px;
+		color:	@brand-primary;
+		&:hover{
+			background: @brand-warning;
+			opacity:	0.8; 
+			color:		white;
+		}
+	}
+}
 .conquered_social{width:125px; margin:0 auto; padding:0;}
 
 /*------------------------------------------------------
@@ -152,12 +197,17 @@ Media Queries
 @media (min-width:768px){
 	.conquered_topbar{height:35px;}
 	.conquered_headerimage{margin-top:35px;}
-	.conquered_title{font-size:32px; line-height:50px;}
-	.conquered_topbar .navbar-nav{width:600px;}
+	.conquered_title{
+		font-size:32px; line-height:50px;
+		.logo {
+			max-height: 88px;
+		}
+	}
+	.conquered_topbar .navbar-nav{width:700px;}
 	.conquered_titlewrappersmall{display:none;}
 	.conquered_topbar .navbar{position:relative; top:-35px;}
 	.conquered_workbox{width:50%;}
-	.conquered_topbar .navbar-default .navbar-nav>li>a{color:#ffffff; font-size:14px; padding:5px 25px;}
+	.conquered_topbar .navbar-default .navbar-nav>li>a{color:#ffffff; font-size:14px; padding:7px 25px;}
 	.slidernav a.previous{left:2%;}
 	.slidernav a.next{right:1%;}
 	}
@@ -165,7 +215,13 @@ Media Queries
 @media (min-width:992px){
 	.conquered_topbar{height:50px;}
 	.conquered_headerimage{margin-top:50px;}
-	.conquered_title{font-size:40px; line-height:60px;}
+	.conquered_title{
+		font-size:40px; 
+		line-height:60px;
+		.logo{
+			max-height: 115px;
+		}
+	}
 	.conquered_homewrapper{display:block;}
 	.conquered_homewrapper{top:0%; width:100%;}
 	.conquered_hometitle{font-size:26px; margin-top:10px;}
@@ -179,8 +235,13 @@ Media Queries
 	.conquered_worktitle{margin-top:5%; font-size:16px; font-weight:bold; color:#ffffff;}
 	}
 
-@media (min-width:1200px){
-	.conquered_title{font-size:50px; line-height:84px;}
+@media (min-width:1375px){
+	.conquered_title{
+		font-size:50px; line-height:84px;
+		.logo{
+			max-height: 138px;
+		}
+	}
 	.conquered_homewrapper{top:0%; width:100%;}
 	.conquered_hometitle{font-size:40px; margin-top:40px;}
 	.conquered_hometext{text-align:center; font-size:16px; margin:0 auto; width:80%; line-height:30px;}

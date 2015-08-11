@@ -9,6 +9,6 @@ class PageTheme extends Theme {
     	$this->providesAsset('css', 'bootstrap/*');
     	$this->requireAsset('javascript', 'jquery');
     }
-        
+
 }
 
