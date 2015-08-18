@@ -11,13 +11,11 @@
             ?>
 			</div>
 			<div class="container-fluid">
-                <div class="row">
-                    <?php
-                        $a = new Area('Main');
-                        $a->setAreaGridMaximumColumns(12);
-                        $a->display($c);
-                    ?>
-                </div>
+                <?php
+                    $a = new Area('Main');
+                    $a->setAreaGridMaximumColumns(12);
+                    $a->display($c);
+                ?>
             </div>
 	        <?php $this->inc('elements/footer.php'); ?> 
 	    </div>

@@ -25,14 +25,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section row conquered_footerwrapper">
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-				<div class="col-xs-6">
-					<p class="pull-left">Copyright &copy; <?php echo date("Y") ?> Shelbyville Physical Therapy & Spine Care Center, P.S.C.</p>
-				</div>
-				<div class="col-xs-6">
-					<p class="pull-right">Website Designed by <a href="http://www.dazeysolutions.com">Dazey Solutions</a>.</p>
+			<div class="section row conquered_footerwrapper">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<div class="col-xs-12 col-sm-6">
+						<p class="pull-left">Copyright &copy; <?php echo date("Y") ?> Shelbyville Physical Therapy & Spine Care Center, P.S.C.</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<p class="pull-right">Website Designed by <a href="http://www.dazeysolutions.com">Dazey Solutions</a>.</p>
+					</div>
 				</div>
 			</div>
 		</div>

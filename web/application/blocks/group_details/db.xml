@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btGroupDisplay">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="groupName" type="C"></field>
+		<field name="title" type="C"></field>
+	</table>
+</schema>
