@@ -3,10 +3,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="conquered_titlewrapper">
-				<svg width="100%" viewBox="0 0 1200 205">
-					<polygon points="0,0 40,144 1160,144 1200,0" style="fill:rgb(7.493591%,22.601318%,44.927979%);stroke-width:0" />
-					<polygon points="40,144 55.6,200 1144.4,200 1160,144" style="fill:black;fill-opacity:.5;stroke-width:0" />
-				</svg>
+				<img src="<?php echo $view->getThemePath() ?>/assets/images/top.svg">
+				
 				<div class="conquered_title">
 					<svg class="logo" viewBox="0 0 1740 800" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 						<g>

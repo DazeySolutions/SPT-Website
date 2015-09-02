@@ -55,7 +55,7 @@ class RecaptchaController extends CaptchaController
         $responseAssets = ResponseAssetGroup::get();
         $responseAssets->requireAsset('ec_recaptcha');
 
-        echo '<div id="' . uniqid('ecr') . '" class="g-recaptcha ecRecaptcha pull-right" data-sitekey="' . $config->get('captcha.site_key') . '" data-theme="' . $config->get('captcha.theme') . '"></div>';
+        echo '<div id="' . uniqid('ecr') . '" class="g-recaptcha ecRecaptcha captcha-centered" data-sitekey="' . $config->get('captcha.site_key') . '" data-theme="' . $config->get('captcha.theme') . '"></div>';
         echo '<noscript>
           <div style="width: 302px; height: 352px;">
             <div style="width: 302px; height: 352px; position: relative;">

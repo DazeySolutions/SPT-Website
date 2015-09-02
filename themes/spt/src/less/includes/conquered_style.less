@@ -3,16 +3,38 @@
     	top: 49px;
 	}
 }
+
+.captcha-centered>div>div{
+	margin: auto;
+}
+
+.panel-heading{
+	>span{
+		>i{
+			&.fa-caret-up {
+				display: block;
+			}
+			&.fa-caret-down {
+				display: none;
+			}
+		}
+	}
+	&.collapsed{
+		>span{
+			>i{
+				&.fa-caret-up {
+					display: none;
+				}
+				&.fa-caret-down {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
 p{
 	margin: 0px;
-}
-body{
-	font:'Open Sans',Arial,Helvetice Neue,sans-serif; 
-	color:#888888; 
-	font-weight:300; 
-	font-style:normal; 
-	-webkit-font-smoothing:antialiased; 
-	-webkit-text-size-adjust:100%;
 }
 .navbar-conquered{
 	background-color: rgba(0,0,0,0);
@@ -40,6 +62,12 @@ body{
 			> a{
 				color: white;
 				font-size: 14px;
+			}
+			&.active{
+				> a, a:hover, a:focus{
+					background: @brand-warning;
+					opacity: 0.8;
+				}
 			}
 			margin: 0px 15px;
 			border-bottom: 1px solid @brand-primary;
@@ -72,7 +100,6 @@ h1{width:100%; font-size:36px; color:#747474; text-align:center;}
 	width:100%; 
 	margin-top:50px; 
 	position:relative;
-	min-height:	130px;
 	img{
 		width:100%;
 	}
@@ -83,8 +110,8 @@ h1{width:100%; font-size:36px; color:#747474; text-align:center;}
 	top:0; 
 	width:100%; 
 	left:0;
-	svg{
-		display:	block;
+	img{
+		width: 100%;
 	}
 }
 .conquered_title{
@@ -249,7 +276,10 @@ Media Queries
 			max-height: 88px;
 		}
 	}
-	.conquered_topbar .navbar-nav{width:700px;}
+	.conquered_headerimage{
+		min-height:	93px;
+	}
+	.conquered_topbar .navbar-nav{width:712px;}
 	.conquered_titlewrappersmall{display:none;}
 	.conquered_topbar .navbar{position:relative; top:-35px;}
 	.conquered_workbox{width:50%;}
@@ -268,6 +298,11 @@ Media Queries
 			max-height: 115px;
 		}
 	}
+	
+	.conquered_headerimage{
+		min-height:	120px;
+	}
+	
 	.conquered_homewrapper{display:block;}
 	.conquered_homewrapper{top:0%; width:100%;}
 	.conquered_hometitle{font-size:26px; margin-top:10px;}
@@ -288,6 +323,9 @@ Media Queries
 			max-height: 138px;
 		}
 	}
+	.conquered_headerimage{
+		min-height:	143px;
+	}
 	.conquered_homewrapper{top:0%; width:100%;}
 	.conquered_hometitle{font-size:40px; margin-top:40px;}
 	.conquered_hometext{text-align:center; font-size:16px; margin:0 auto; width:80%; line-height:30px;}
@@ -307,3 +345,112 @@ Media Queries
 	.slidernav a.previous{left:15%;}
 	.slidernav a.next{right:15%;}
 	}
+	
+	
+// feature block
+
+div.ccm-block-feature-item-hover-wrapper {
+  text-align: center;
+
+  div.ccm-block-feature-item-hover-title {
+    color: lighten(@body-type-color, 10%);
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+}
+
+div.ccm-block-feature-item-hover {
+
+  display: table;
+  margin: 0px auto 0px auto;
+
+
+  div.ccm-block-feature-item-hover-icon {
+    border: 1px solid lighten(@body-type-color, 40%);
+    .border-radius(50%);
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0px auto 0px auto;
+
+    .transition(all 0.2s linear);
+    cursor: pointer;
+    i {
+      margin-top: 3px;
+      color: @header-navigation-type-color;
+      font-size: @h1-type-font-size;
+    }
+
+    width: 200px;
+    height: 200px;
+
+    @media (min-width: @screen-sm-min) {
+      width: 80px;
+      height: 80px;
+    }
+
+
+    @media (min-width: @screen-md-min) {
+      width: 110px;
+      height: 110px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      width: 134px;
+      height: 134px;
+    }
+  }
+
+}
+
+div.ccm-block-feature-item-hover-wrapper:hover {
+  div.ccm-block-feature-item-hover-icon {
+    background: lighten(@header-navigation-type-color, 40%);
+    border: 1px solid lighten(@header-navigation-type-color, 30%);
+  }
+}
+
+// feature block
+div.ccm-block-feature-item {
+  position: relative;
+
+  h4, i {
+    color: @header-site-title-type-color;
+  }
+
+  i {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+  }
+
+  padding-left: 25px;
+  margin-bottom: 40px
+}
+
+// Custom home page class for feature
+div.feature-home-page {
+  div.ccm-block-feature-item h4, div.ccm-block-feature-item i {
+    color: @home-feature-title-color;
+  }
+
+  div.ccm-block-feature-item h4 {
+    font-size: 1.5em;
+  }
+
+  div.ccm-block-feature-item i {
+    color: @home-feature-icon-color;
+    font-size: 1.3em;
+    top: 1px;
+  }
+
+  div.ccm-block-feature-item {
+    padding-left: 45px;
+  }
+}
+	
+.img-centered{
+    margin: 0px auto;
+}

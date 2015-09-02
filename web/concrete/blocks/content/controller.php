@@ -83,7 +83,7 @@ use \Concrete\Core\Editor\LinkAbstractor;
 			$node->appendChild($cdata);
 		}
 
-		function save($args) {
+        function save($args) {
 			$args['content'] = LinkAbstractor::translateTo($args['content']);
 			parent::save($args);
 		}
