@@ -40,6 +40,7 @@ class Controller extends BlockController {
 		}
 		ksort($userData);
 		$this->set('userData', $userData);
+    $this->set('title', $this->title);
 	}
 	
 	protected function common(){

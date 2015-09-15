@@ -64,10 +64,10 @@ class Feed extends \Concrete\Core\Page\Feed implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', 'itemsPerFeed', 'checkPagePermissions', 'pfDescription', 'pfHandle', 'pfTitle', 'pfID', 'cParentID', 'ptID', 'pfIncludeAllDescendents', 'pfDisplayAliases', 'pfContentToDisplay', 'pfAreaHandleToDisplay', 'pfDisplayFeaturedOnly');
+            return array('__isInitialized__', 'itemsPerFeed', 'checkPagePermissions', 'customTopicAttributeKeyHandle', 'customTopicTreeNodeID', 'iconFID', 'pfDescription', 'pfHandle', 'pfTitle', 'pfID', 'cParentID', 'ptID', 'pfIncludeAllDescendents', 'pfDisplayAliases', 'pfContentToDisplay', 'pfAreaHandleToDisplay', 'pfDisplayFeaturedOnly');
         }
 
-        return array('__isInitialized__', 'itemsPerFeed', 'checkPagePermissions', 'pfDescription', 'pfHandle', 'pfTitle', 'pfID', 'cParentID', 'ptID', 'pfIncludeAllDescendents', 'pfDisplayAliases', 'pfContentToDisplay', 'pfAreaHandleToDisplay', 'pfDisplayFeaturedOnly');
+        return array('__isInitialized__', 'itemsPerFeed', 'checkPagePermissions', 'customTopicAttributeKeyHandle', 'customTopicTreeNodeID', 'iconFID', 'pfDescription', 'pfHandle', 'pfTitle', 'pfID', 'cParentID', 'ptID', 'pfIncludeAllDescendents', 'pfDisplayAliases', 'pfContentToDisplay', 'pfAreaHandleToDisplay', 'pfDisplayFeaturedOnly');
     }
 
     /**
@@ -173,6 +173,28 @@ class Feed extends \Concrete\Core\Page\Feed implements \Doctrine\ORM\Proxy\Proxy
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function getIconFileID()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIconFileID', array());
+
+        return parent::getIconFileID();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setIconFileID($iconFID)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIconFileID', array($iconFID));
+
+        return parent::setIconFileID($iconFID);
+    }
+
     /**
      * {@inheritDoc}
      */
@@ -314,6 +336,50 @@ class Feed extends \Concrete\Core\Page\Feed implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTitle', array());
 
         return parent::getTitle();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getCustomTopicAttributeKeyHandle()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomTopicAttributeKeyHandle', array());
+
+        return parent::getCustomTopicAttributeKeyHandle();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setCustomTopicAttributeKeyHandle($customTopicAttributeKeyHandle)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomTopicAttributeKeyHandle', array($customTopicAttributeKeyHandle));
+
+        return parent::setCustomTopicAttributeKeyHandle($customTopicAttributeKeyHandle);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getCustomTopicTreeNodeID()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCustomTopicTreeNodeID', array());
+
+        return parent::getCustomTopicTreeNodeID();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setCustomTopicTreeNodeID($customTopicTreeNodeID)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCustomTopicTreeNodeID', array($customTopicTreeNodeID));
+
+        return parent::setCustomTopicTreeNodeID($customTopicTreeNodeID);
     }
 
     /**

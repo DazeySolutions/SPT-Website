@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php $this->inc('elements/head.php'); ?> 
+    <?php if($c->isEditMode()){ ?>
+	<style>
+		body.editmode *{transition: none;}
+	</style>
+    <body class="editmode">
+    <?php } else {?>
     <body>
+    <?php } ?>
 	    <div class="conquered_home_page <?php echo $c->getPageWrapperClass()?>">
 	        <?php $this->inc('elements/navigation.php'); ?>
             <div class="conquered_headerimage">

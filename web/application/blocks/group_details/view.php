@@ -1,8 +1,10 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
-<div class="row section">
+<div class="row">
 	<div class="col-xs-12 col-md-10 col-md-offset-1">
-		<?php
-		$count = 0;
+    <?php if($title != ""){ ?>
+    <h1 class="col-xs-12 text-center"><?php echo $title ?></h1>
+		<?php }
+    $count = 0;
 		foreach($userData as $user){ ?>
 			<?php if($count%3 == 0) {?>
 			<div class="row">

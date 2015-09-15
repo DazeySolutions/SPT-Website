@@ -10,12 +10,12 @@ if ($c->isEditMode()) { ?>
     <?php if(count($rows) > 0) { ?>
     <ul class="slides">
         <?php foreach($rows as $row) { ?>
-            <li>
-                <?php
-                    $f = File::getByID($row['fID']);
-                ?>
-                        <img src="<?php echo $f->getRelativePath() ?>" title="<?php echo $row['title'] ?>" alt="<?php echo $row['description'] ?>" longdesc="<?php echo $row['linkURL'] ?>">
-            </li>
+          <?php
+            $f = File::getByID($row['fID']);
+           ?>
+            <li style="background-image: url('<?php echo $f->getRelativePath() ?>'); background-size: cover;">
+                        <img src="<?php echo $f->getRelativePath() ?>" title="<?php echo $row['title'] ?>" alt="<?php echo $row['description'] ?>" longdesc="<?php echo $row['linkURL'] ?>" style='z-index: -2;'> 
+           </li>
         <?php }?>
     </ul>
     <?php } ?>

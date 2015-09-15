@@ -64,10 +64,10 @@ class StyleSet extends \Concrete\Core\StyleCustomizer\Inline\StyleSet implements
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', 'issID', 'customClass', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor');
+            return array('__isInitialized__', 'issID', 'customClass', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor', 'hideOnExtraSmallDevice', 'hideOnSmallDevice', 'hideOnMediumDevice', 'hideOnLargeDevice');
         }
 
-        return array('__isInitialized__', 'issID', 'customClass', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor');
+        return array('__isInitialized__', 'issID', 'customClass', 'backgroundColor', 'backgroundImageFileID', 'backgroundRepeat', 'borderColor', 'borderStyle', 'borderWidth', 'borderRadius', 'baseFontSize', 'alignment', 'textColor', 'linkColor', 'marginTop', 'marginBottom', 'marginLeft', 'marginRight', 'paddingTop', 'paddingBottom', 'paddingLeft', 'paddingRight', 'rotate', 'boxShadowHorizontal', 'boxShadowVertical', 'boxShadowBlur', 'boxShadowSpread', 'boxShadowColor', 'hideOnExtraSmallDevice', 'hideOnSmallDevice', 'hideOnMediumDevice', 'hideOnLargeDevice');
     }
 
     /**
@@ -770,6 +770,94 @@ class StyleSet extends \Concrete\Core\StyleCustomizer\Inline\StyleSet implements
     /**
      * {@inheritDoc}
      */
+    public function getHideOnExtraSmallDevice()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getHideOnExtraSmallDevice', array());
+
+        return parent::getHideOnExtraSmallDevice();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setHideOnExtraSmallDevice($hideOnExtraSmallDevice)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setHideOnExtraSmallDevice', array($hideOnExtraSmallDevice));
+
+        return parent::setHideOnExtraSmallDevice($hideOnExtraSmallDevice);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getHideOnSmallDevice()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getHideOnSmallDevice', array());
+
+        return parent::getHideOnSmallDevice();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setHideOnSmallDevice($hideOnSmallDevice)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setHideOnSmallDevice', array($hideOnSmallDevice));
+
+        return parent::setHideOnSmallDevice($hideOnSmallDevice);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getHideOnMediumDevice()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getHideOnMediumDevice', array());
+
+        return parent::getHideOnMediumDevice();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setHideOnMediumDevice($hideOnMediumDevice)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setHideOnMediumDevice', array($hideOnMediumDevice));
+
+        return parent::setHideOnMediumDevice($hideOnMediumDevice);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getHideOnLargeDevice()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getHideOnLargeDevice', array());
+
+        return parent::getHideOnLargeDevice();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setHideOnLargeDevice($hideOnLargeDevice)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setHideOnLargeDevice', array($hideOnLargeDevice));
+
+        return parent::setHideOnLargeDevice($hideOnLargeDevice);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function save()
     {
 
@@ -787,6 +875,28 @@ class StyleSet extends \Concrete\Core\StyleCustomizer\Inline\StyleSet implements
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'export', array($node));
 
         return parent::export($node);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getClass($theme = NULL)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getClass', array($theme));
+
+        return parent::getClass($theme);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isHiddenOnDevice($class)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isHiddenOnDevice', array($class));
+
+        return parent::isHiddenOnDevice($class);
     }
 
 }
