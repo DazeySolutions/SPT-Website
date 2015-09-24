@@ -2,9 +2,9 @@
 
 /**
  * -----------------------------------------------------------------------------
- * Generated 2015-09-15T11:39:40-04:00
+ * Generated 2015-09-15T11:57:16-04:00
  *
- * @item      misc.do_page_reindex_check
+ * @item      user.registration.type
  * @group     concrete
  * @namespace null
  * -----------------------------------------------------------------------------
@@ -12,6 +12,9 @@
 return array(
     'site' => 'Shelbyville Physical Therapy & Spine Care Center, P.S.C.',
     'version_installed' => '5.7.5.1',
+    'white_label' => array(
+        'background_image' => 'none',
+    ),
     'misc' => array(
         'access_entity_updated' => 1438612840,
         'latest_version' => '5.7.5.1',
@@ -43,12 +46,12 @@ return array(
         'profiles_enabled' => false,
         'registration' => array(
             'email_registration' => false,
-            'type' => 'manual_approve',
-            'captcha' => true,
-            'enabled' => true,
+            'type' => 'disabled',
+            'captcha' => false,
+            'enabled' => false,
             'approval' => true,
             'validate_email' => false,
-            'notification' => null,
+            'notification' => false,
             'notification_email' => false,
         ),
         'gravatar' => array(
